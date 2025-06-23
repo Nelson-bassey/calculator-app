@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    width: 360px;
+    border: 1px dashed rgb(226, 37, 37);
+    height: 400px;
+    border-radius: 4px;
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    font-weight: bold;
+    background: -webkit-radial-gradient(#000, green);
+}
+.Calculator{
+    display: flex;
+    justify-content: center;
+}
+button{
+    text-align: center;
+    width: 70px;
+    row-gap: 10px;
+    margin-left: 10px;
+    margin-bottom: 36px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    border-style: inset;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:focus{
+    color: white;
+    background: -webkit-radial-gradient(yellow);
+    color: black;
+}
+
+input{
+    margin-bottom: 15px;
+    width: 319px;
+    padding: 15px;
+    justify-self: center;
+    text-align: right;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input:focus, input:hover{
+    background-color: white;
+    color: black;
+}
+
+.operators{
+    display: flex;
+    flex-direction: column;
+}
+.operator-items{
+    width: 60px;
+    font-size: 100%;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+#plus{
+    height: 80px;
+}
