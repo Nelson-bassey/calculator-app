@@ -40,7 +40,7 @@ button{
 }
 button:focus{
     color: white;
-    background: -webkit-radial-gradient(yellow);
+    background: -webkit-radial-gradient(beige);
     color: black;
 }
 
