@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Title & SEO Optimization -->
+  <title>Simple Online Calculator</title>
+  <meta name="description" content="Use this fast, responsive online calculator from Nelbe Mega Stores to solve basic arithmetic problems. Perfect for quick calculations anytime, anywhere." />
+  <meta name="keywords" content="online calculator, simple calculator, web calculator, Nelbe Mega Stores, fast calculator, arithmetic, basic math" />
+  <meta name="author" content="Nelbe Mega Stores" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Online Calculator | Nelbe Mega Stores" />
+  <meta property="og:description" content="Solve basic math problems instantly with our free, responsive web calculator." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nelson-bassey.github.io/nelbe-calculator/" />
+  <meta property="og:image" content="https://nelson-bassey.github.io/nelbe-calculator/images/calculator-preview.png" />
+
+  <!-- Twitter Card -->
+  <!-- <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Online Calculator | Nelbe Mega Stores" />
+  <meta name="twitter:description" content="Use this lightweight calculator to perform basic math operations quickly and easily." />
+  <meta name="twitter:image" content="https://nelson-bassey.github.io/nelbe-calculator/images/calculator-preview.png" />
+   -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-    <main>
-        <!-- this section is for input field  -->
-        <div>  
-    <input type="number" id="display" placeholder="0" readonly><br></div>
+  <main>
+    <!-- Input Display -->
+    <div>
+      <input type="number" id="display" placeholder="0" readonly><br>
+    </div>
 
-        <!-- this  section is for thew integers  -->
+    <!-- Calculator Buttons -->
+    <div class="Calculator">
+      <div>
+        <button>clear</button><button class="btn">1</button><button>2</button><br>
+        <button>3</button><button>4</button><button class="btn">5</button><br>
+        <button>6</button><button>7</button><button>8</button><br>
+        <button>9</button><button>0</button><button>=</button>
+      </div>
 
-        <div class="Calculator">
-            <div>
-                <button>clear</button><button class="btn">1</button><button>2</button> <br>
-                <button>3</button><button>4</button><button class="btn">5</button> <br>
-                <button>6</button> <button>7</button><button>8</button> <br>
-                <button>9</button><button>0</button><button>=</button>
-            </div> 
+      <!-- Operators -->
+      <div class="operators">
+        <button class="operator-items">*</button>
+        <button class="operator-items">-</button>
+        <button class="operator-items">/</button>
+        <button class="operator-items" id="plus">+</button>
+      </div>
+    </div>
+  </main>
 
-            <!-- this section is for the operators  -->
-
-            <div class="operators">
-                <button class="operator-items">*</button>
-                <button class="operator-items">-</button>
-                <button class="operator-items">/</button>
-                <button class="operator-items" id="plus">+</button>
-            </div>
-        </div> 
-    </main>
-
-
-
-
-    <script src="script.js"></script> 
+  <script src="script.js"></script>
 </body>
 </html>
